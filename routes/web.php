@@ -106,3 +106,7 @@ Route::get('patient/{id}',function ($id){
     return "Hi patient $id";
 })->name("pat-prof");
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
