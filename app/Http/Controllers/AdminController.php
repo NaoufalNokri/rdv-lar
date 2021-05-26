@@ -12,4 +12,7 @@ class AdminController extends Controller
     function addDoctor(){
         return view('admin.addDoctor');
     }
+    function displayDoctors(){
+        return view('admin.displayDoctors');
+    }
 }
