@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('dashboard');
 })->name("landing");
 
 
@@ -50,8 +50,8 @@ Route::post('/register', function (){
 /* Admin Pages */
     // Dashboard
 Route::get('/admin', function (){
-    return "Admin Home page";
-})->name("admin-db");
+    return view("admin.adminLanding");
+})->name("");
 
     // Manage Accounts
 Route::get('/admin/accounts', function (){
@@ -108,7 +108,7 @@ Route::get('patient/{id}',function ($id){
 })->name("pat-prof");
 
 
-//Auth::routes();
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -128,5 +128,7 @@ Route::group(['middleware' => 'auth'], function () {
 	 Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
 	 Route::get('table-list', function () {return view('pages.tables');})->name('table');
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
+    Route::get('admin', ['as' => 'admin.adminLanding', 'uses' => 'App\Http\Controllers\AdminController@adminLand']);
+    Route::get('admin', ['as' => 'admin.addDoc', 'uses' => 'App\Http\Controllers\AdminController@addDoctor']);
 });
 
