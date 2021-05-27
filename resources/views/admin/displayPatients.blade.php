@@ -26,11 +26,12 @@
                 <th scope="col">ID</th>
                 <th scope="col">Nom</th>
                 <th scope="col">Prenom</th>
-                <th scope="col">Type</th>
-                <th scope="col">Spécialité</th>
-                <th scope="col">Tarif</th>
-                <th scope="col">Consultations réalisés</th>
-                <th scope="col"></th>
+                <th scope="col">CNE</th>
+                <th scope="col">Date de naissance</th>
+                <th scope="col">sexe</th>
+                <th scope="col">age</th>
+                <th scope="col">telephone</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -52,24 +53,29 @@
                     </span>
                 </td>
                 <td>
-                   Medecin
-                   
-
-                </td>
-                <td>
                     <div class="d-flex align-items-center">
-                        Génichologue
+                        BB454698
                     </div>
                 </td>
                 <td>
                     <div class="d-flex align-items-center">
-                        250dh
+                        10/10/1999
                     </div>
                 </td>
                 <td>
-                <div class="text-center"">
-                        12
-                    </div>
+              
+                        M
+              
+                </td>
+                <td>
+             
+                        21
+              
+                </td>
+                <td>
+               
+                        0615179828
+                
                 </td>
                 <td class="text-right">
                     <div class="dropdown">
@@ -77,59 +83,14 @@
                         <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Delete</a>
+                            <a class="dropdown-item" href="#">Edit</a>
+                           
                         </div>
                     </div>
                 </td>
             </tr>
-            <tr>
-                <th scope="row">
-                <div class="media align-items-center">
-                        
-                        <div class="media-body">
-                            <span class="mb-0 text-sm">2</span>
-                        </div>
-                    </div>
-                </th>
-                <td>
-                   ELHACHIMI
-                </td>
-                <td>
-                    <span class="badge badge-dot">
-                    Yassine
-                    </span>
-                </td>
-                <td>
-                    Proffessionnel santé
-                </td>
-                <td>
-                  Cardiologue
-                </td>
-                <td>
-                    <div class="d-flex align-items-center">
-                        250dh
-                    </div>
-                </td>
-                <td>
-                <div class="text-center"">
-                        25
-                    </div>
-                </td>
-                <td class="text-right">
-                    <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-ellipsis-v"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
+            
             <tr>
                 
           </div>

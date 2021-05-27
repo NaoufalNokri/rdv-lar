@@ -22,17 +22,6 @@
           <div class="card-body">
           <form>
             <div class="row">
-
-              <div class="col-md-6">
-                <div class="form-group">
-                <label class="text-black" for="type">Type du proffessionnel</label>
-                <select name="type" id="" class="form-control">
-                  <option value="docteur">Docteur</option>
-                  <option value="proffessionnel sante">Proffessionnel santé</option>
-                </select>
-                </div>
-              </div>
-
               <div class="col-md-6">
                 <div class="form-group">
                 <label class="text-black" for="">Nom</label><input type="text" class="form-control" name="nom" id="exampleFormControlInput1" placeholder="Nom du medecin">
@@ -53,33 +42,36 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                <label class="text-black" for="region">Région</label><input type="text" class="form-control" name = "region"  id="exampleFormControlInput1" placeholder="Region du docteur">
+                <label class="text-black" for="cne">CNE</label><input type="text" class="form-control" name = "cne"  id="exampleFormControlInput1" placeholder="CNE">
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label class="text-black" for="ville">Ville</label><input type="text" class="form-control" name="ville" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <label class="text-black" for="sexe">Sexe</label>
+                  <select name="sexe" id="" class="form-control">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                  </select>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
-                <label class="text-black" for="tarif">Tarif</label><input type="number" class="form-control" name="tarif" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label class="text-black" for="telephone">Telephone</label><input type="number" class="form-control" name="telephone" id="exampleFormControlInput1" placeholder="Telephone">
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
-                <label class="text-white" for="specialite">Spécialité</label>
-                <select name="specialite" id="" class="form-control">
-                <option value="s1">specialite1</option>
-                <option value="s2">specialite2</option>
-                </select>
+                <label class="text-white" for="specialite">Date de naissance</label>
+                <input type="date" name="dn" class="form-control"/>
                 </div>
               </div>
 
               
+              <div class="col-4">
+              </div>
               <div class="col-4">
               </div>
               <div class="col-4">

@@ -84,15 +84,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                    <i class="ni ni-single-02 text-blue"></i> </i>
+                    <a class="nav-link active" href="#doctors" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
+                    <i class="ni ni-badge text-blue"></i> </i>
                         <span class="nav-link-text" style="color: #f4645f;">{{ __('Doctors') }}</span>
                     </a>
 
-                    <div class="collapse show" id="navbar-examples">
+                    <div class="collapse show" id="doctors">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
+                                <a class="nav-link" href="{{ route('admin.dispDocc') }}">
                                     {{ __('Display doctors') }}
                                 </a>
                             </li>
@@ -106,14 +106,36 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('icons') }}">
-                        <i class="ni ni-planet text-blue"></i> {{ __('Doctor statistics') }}
+                    <a class="nav-link active" href="#patients" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
+                    <i class="ni ni-satisfied text-blue"></i> </i>
+                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Patients') }}</span>
+                    </a>
+
+                    <div class="collapse show" id="patients">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.dispPat') }}">
+                                    {{ __('Display patients') }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.addPat') }}">
+                                    {{ __('Add patient') }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.consultations') }}">
+                        <i class="ni ni-archive-2 text-blue"></i> {{ __('Consultations') }}
                     </a>
                 </li>
 
                 <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('map') }}">
-                        <i class="ni ni-pin-3 text-orange"></i> {{ __('Maps') }}
+                    <a class="nav-link" href="{{ route('admin.stats') }}">
+                        <i class="ni ni-chart-bar-32 text-blue"></i> {{ __('Statistiques') }}
                     </a>
                 </li>
                 <li class="nav-item">
