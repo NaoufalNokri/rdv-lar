@@ -38,15 +38,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/adminLanding', ['as' => 'admin.adminLanding', 'uses' => 'App\Http\Controllers\AdminController@adminLand']);
     Route::get('admin/addDoctor', ['as' => 'admin.addDoc', 'uses' => 'App\Http\Controllers\AdminController@addDoctor']);
     Route::get('admin/displayDoctors', ['as' => 'admin.dispDocc', 'uses' => 'App\Http\Controllers\AdminController@displayDoctors']);
-<<<<<<< HEAD
     Route::get('admin/consultations', ['as' => 'admin.consultations', 'uses' => function(){return view('admin.consultations');}]);
     Route::get('admin/statistiques', ['as' => 'admin.stats', 'uses' => function(){return view('admin.statistics');}]);
     Route::get('admin/addPatient', ['as' => 'admin.addPat', 'uses' => function(){return view('admin.addPatient');}]);
     Route::get('admin/displayPatients', ['as' => 'admin.dispPat', 'uses' => function(){return view('admin.displayPatients');}]);
-=======
+
+    
     Route::get('patient/', ['as' => 'patient.patientAcueil', 'uses' => 'App\Http\Controllers\PatientController@index']);
     Route::get('patient/rendezVous', ['as' => 'patient.rendezVous', 'uses' => 'App\Http\Controllers\PatientController@rendezVous']);
 
->>>>>>> 08dfca10bdf797664df84d57e8655b901281c0e1
 });
 
