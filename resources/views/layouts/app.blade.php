@@ -29,7 +29,12 @@
         @endauth
         
         <div class="main-content">
+<<<<<<< HEAD
             @yield('navbar')
+=======
+        @yield('navbar')
+            
+>>>>>>> 08dfca10bdf797664df84d57e8655b901281c0e1
             @yield('content')
         </div>
 
